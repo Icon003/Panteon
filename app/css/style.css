@@ -28,6 +28,18 @@
 	src: url("/fonts/ProximaNova-Black.woff") format("woff"),
 	url("/fonts/ProximaNova-Black.woff2") format("woff2");
 }
+@font-face {
+	font-family: "Proxima Nova Black";
+
+	src: url("/fonts/ProximaNova-Black.woff") format("woff"),
+	url("/fonts/ProximaNova-Black.woff2") format("woff2");
+}
+@font-face {
+	font-family: "Myriad Pro Regular";
+
+	src: url("/fonts/MyriadPro-Regular.woff") format("woff"),
+	url("/fonts/MyriadPro-Regular.woff2") format("woff2");
+}
 
 .wrapper {
 	max-width: 1200px;
@@ -227,9 +239,82 @@
 }
 
 
+.statistics-section {
+	width: 100%;
 
-@media screen and (max-width: 1000px) {
+	background-color: #fff5f8;
+}
+
+.statistics-section__card-container {
+	display: flex;
+
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+
+	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.statistics-section__statistics-card {
+	display: flex;
+
+	flex-direction: column;
+	justify-content: center;
+	flex: 0;
+
+	margin: 20px;
+}
+
+.statistics-card--line {
+	flex: 1;
+
+	position: relative;
+}
+.statistics-card--line::before {
+	width: 2px;
+	height: 50px;
+
+	position: absolute;
+	top: 25px;
+	right: 0;
+
+	background-color: #fbd6e0;
+
+	content: "";
+}
+
+
+.statistics-section__statistics-card-title {
+	font-family: "Proxima Nova Bold";
+	font-size: 48px;
+
+	color: #e12457;
+}
+
+.statistics-section__statistics-card-text {
+	width: 130px;
+
+	font-family: "Myriad Pro Regular";
+	font-size: 14px;
+
+	color: #4c4c4c;
+}
+
+
+@media screen and (max-width: 1024px) {
 	.heder__video-text-line {
+		display: none;
+	}
+
+	.statistics-section__statistics-card {
+		justify-content: center;
+		align-items: center;
+		flex: 1;
+	}
+
+	.statistics-card--line::before {
 		display: none;
 	}
 }
