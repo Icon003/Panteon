@@ -4,6 +4,7 @@
 	padding: 0;
 }
 
+/* Подключаем шрифты */
 @font-face {
 	font-family: "Proxima Nova Thin";
 
@@ -47,6 +48,7 @@
 	url("/fonts/MyriadPro-Regular.woff2") format("woff2");
 }
 
+/* Общие стили */
 .wrapper {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -54,6 +56,23 @@
 	padding-left: 15px;
 }
 
+.section-title {
+	width: 100%;
+	margin-top: 110px;
+
+	font-family: "Proxima Nova Bold";
+	font-size: 60px;
+}
+
+.section-title--red {
+	color: #e12457;
+}
+
+.section-title--white {
+	color: #ffffff;
+}
+
+/* Стили для шапки */
 .header {
 	overflow: hidden;
 
@@ -244,7 +263,7 @@
 	background-color: rgb(206, 33, 80);
 }
 
-
+/* Стили для блока со статистикой */
 .statistics-section {
 	width: 100%;
 
@@ -278,6 +297,7 @@
 
 	position: relative;
 }
+
 .statistics-card--line::before {
 	width: 2px;
 	height: 50px;
@@ -307,6 +327,7 @@
 	color: #4c4c4c;
 }
 
+/* Стили для блока с информацией о Марсе */
 .about-mars-section {
 	width: 100%;
 	height: 550px;
@@ -315,21 +336,6 @@
 	background-repeat: no-repeat;
 	background-position: bottom center;
 	background-size: cover;
-}
-
-.section-title {
-	width: 100%;
-	margin-top: 110px;
-
-	font-family: "Proxima Nova Bold";
-	font-size: 60px;
-}
-
-.section-title--red {
-	color: #e12457;
-}
-.section-title--white {
-	color: #ffffff;
 }
 
 .about-mars-section__paragraph-container {
@@ -358,12 +364,53 @@
 	font-size: 14px;
 }
 
+/* Стили для блока с информацией об Илоне Маске */
+.about-ilon-section__content-container {
+	position: relative;
+}
 
+.about-ilon-section__paragraph {
+	margin-top: 45px;
+}
+
+.about-ilon-section__title-paragraph {
+	font-family: "Proxima Nova Bold";
+	font-size: 24px;
+}
+
+.about-ilon-section__text-paragraph {
+	max-width: 70%;
+	margin-top: 20px;
+
+	font-family: "Proxima Nova Light";
+	font-size: 16px;
+}
+
+.text-paragraph--red {
+	font-size: 18px;
+
+	color: #e12457;
+}
+
+.about-ilon-section__image-container {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.about-ilon-section__image-ilon {
+	width: 325px;
+	height: 373px;
+}
+
+/* Медиа стили */
 @media screen and (max-width: 1024px) {
+	/* Стили для шапки */
 	.heder__video-text-line {
 		display: none;
 	}
 
+	/* Стили для блока со статистикой */
 	.statistics-section__statistics-card {
 		justify-content: center;
 		align-items: center;
@@ -374,7 +421,7 @@
 		display: none;
 	}
 
-
+	/* Стили для блока с информацией о Марсе */
 	.about-mars-section {
 		width: 100%;
 		height: 700px;
@@ -383,8 +430,14 @@
 		background-repeat: no-repeat;
 		background-position: 75% 104%;
 	}
+
+	/* Стили для блока с информацией об Илоне Маске */
+	.about-ilon-section__text-paragraph {
+		max-width: 60%;
+	}
 }
 @media screen and (max-width: 800px) {
+	/* Стили для шапки */
 	.header {
 		min-height: 1024px;
 
@@ -420,25 +473,47 @@
 	.heder__video-text-line {
 		display: none;
 	}
+
 	.header_scroll-button-container {
 		display: flex;
 
 		justify-content: center;
 	}
 
+	/* Общие стили */
 	.section-title {
 		margin-top: 75px;
 
 		font-size: 48px;
 	}
 
+	/* Стили для блока с информацией о Марсе */
 	.about-mars-section__paragraph {
 		max-width: 345px;
 		margin-right: 20px;
 	}
+
+	/* Стили для блока с информацией об Илоне Маске */
+	.about-ilon-section__image-container {
+		top: 53px;
+	}
+
+	.about-ilon-section__image-ilon {
+		width: 165px;
+		height: 189px;
+	}
+
+	.about-ilon-section__text-paragraph {
+		max-width: 75%;
+	}
+
+	.text-paragraph--long {
+		max-width: 100%;
+	}
 }
 
 @media screen and (max-width: 600px) {
+	/* Стили для шапки */
 	.header {
 		min-height: 600px;
 
@@ -500,6 +575,7 @@
 		height: 60px;
 	}
 
+	/* Стили для блока с информацией о Марсе */
 	.about-mars-section {
 		width: 100%;
 		height: 700px;
@@ -508,9 +584,31 @@
 		background-repeat: no-repeat;
 		background-position: 59% 100%;
 	}
+
+	/* Стили для блока с информацией об Илоне Маске */
+	.about-ilon-section__image-container {
+		display: flex;
+
+		justify-content: center;
+
+		margin-top: 10px;
+		margin-bottom: 10px;
+
+		position: initial;
+	}
+
+	.about-ilon-section__image-ilon {
+		width: 165px;
+		height: 189px;
+	}
+
+	.about-ilon-section__text-paragraph {
+		max-width: 100%;
+	}
 }
 
 @media screen and (max-width: 360px) {
+	/* Стили для блока с информацией о Марсе */
 	.about-mars-section {
 		width: 100%;
 		height: 820px;
