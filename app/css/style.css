@@ -197,6 +197,12 @@
 	text-align: right;
 }
 
+.play-button--none-text {
+	width: 55px;
+
+	font-size: 0;
+}
+
 .play-button:hover {
 	background-image: url(/img/playIcon.png);
 
@@ -410,12 +416,13 @@
 	width: 100%;
 	height: 310px;
 	margin-top: 110px;
+	margin-bottom: 160px;
 
 	position: relative;
 
 	background: url(/img/skyBackground.png);
 	background-repeat: no-repeat;
-	background-position: bottom center;
+	background-position: top center;
 	background-size: cover;
 }
 
@@ -506,6 +513,114 @@
 	box-shadow: 0px 0px 50px 20px #ffffff57;
 }
 
+/* Стили для блока с информацией о жизни в космосе */
+.about-life-space-section {
+	width: 100%;
+	min-height: 1250px;
+
+	position: relative;
+
+	border-top: 1px solid #12102e;
+	background: url(/img/spaceBackground.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.about-life-space-section__video {
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: 570px;
+	margin-top: 60px;
+
+	background-image: url(/img/videoPlugTwo.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.about-life-space-section__spoiler-container {
+	display: flex;
+
+	flex-direction: column;
+
+	margin-top: 70px;
+}
+
+.about-life-space-section__spoiler {
+	display: flex;
+
+	align-items: flex-start;
+
+	position: relative;
+}
+
+
+.about-life-space-section__spoiler-button {
+	width: 240px;
+	margin-bottom: 60px;
+
+	font-family: "Proxima Nova Light";
+	font-size: 16px;
+
+	color: #908bb1;
+	border: none;
+	background: none;
+	background-image: url(/img/arrowIcon.png);
+	background-repeat: no-repeat;
+	background-position-x: 200px;
+	background-position-y: 50%;
+
+	cursor: pointer;
+	text-align: left;
+}
+
+.spoiler-button--active {
+	font-family: "Proxima Nova Bold";
+
+	color: #ffffff;
+	background-image: url(/img/threeArrowIcon.png);
+	background-repeat: no-repeat;
+}
+
+.about-life-space-section__spoiler-content {
+	display: none;
+
+	max-width: 770px;
+
+	position: absolute;
+	left: 280px;
+}
+
+.spoiler-content--active {
+	display: block;
+}
+
+.about-life-space-section__title-spoiler {
+	margin-bottom: 35px;
+
+	font-family: "Proxima Nova Bold";
+	font-size: 24px;
+	line-height: 24px;
+
+	color: #ffffff;
+}
+
+.about-life-space-section__text-spoiler {
+	font-family: "Proxima Nova Light";
+	font-size: 16px;
+
+	color: #ffffff;
+}
+
+.about-life-space-section__paragraph-text-spoiler {
+	margin-bottom: 20px;
+}
+
 
 /* Медиа стили */
 @media screen and (max-width: 1024px) {
@@ -545,12 +660,13 @@
 		width: 100%;
 		height: 380px;
 		margin-top: 110px;
+		margin-bottom: 85px;
 
 		position: relative;
 
 		background: url(/img/skyBackground750.png);
 		background-repeat: no-repeat;
-		background-position: bottom center;
+		background-position: top center;
 		background-size: cover;
 	}
 
@@ -655,6 +771,24 @@
 
 	.text-paragraph--long {
 		max-width: 100%;
+	}
+
+	/* Стили для блока с информацией о жизни в космосе */
+	.about-life-space-section__video {
+		display: flex;
+
+		justify-content: center;
+		align-items: center;
+
+		width: 95%;
+		height: 360px;
+		margin: 0 auto;
+		margin-top: 60px;
+
+		background-image: url(/img/videoPlugTwo.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
 	}
 }
 
@@ -763,6 +897,7 @@
 		width: 100%;
 		height: 650px;
 		margin-top: 190px;
+		margin-bottom: 0;
 
 		position: relative;
 
@@ -807,6 +942,57 @@
 
 	.flight-cost-section__button {
 		width: 100%;
+	}
+
+	/* Стили для блока с информацией о жизни в космосе */
+	.about-life-space-section {
+		height: auto;
+	}
+
+	.about-life-space-section__video {
+		display: flex;
+
+		justify-content: center;
+		align-items: center;
+
+		width: 95%;
+		height: 170px;
+		margin: 0 auto;
+		margin-top: 60px;
+
+		background-image: url(/img/videoPlugTwo.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.about-life-space-section__spoiler {
+		flex-direction: column;
+
+		margin-bottom: 10px;
+	}
+
+	.about-life-space-section__spoiler-button {
+		width: 100%;
+		margin-bottom: 40px;
+
+		font-family: "Proxima Nova Bold";
+
+		background-position-x: right;
+	}
+
+	.spoiler-button--active {
+		background-image: url(/img/arrowIconTop.png);
+		background-repeat: no-repeat;
+		background-position-y: 50%;
+	}
+
+	.about-life-space-section__spoiler-content {
+		position: unset;
+	}
+
+	.about-life-space-section__title-spoiler {
+		display: none;
 	}
 }
 
