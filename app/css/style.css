@@ -51,7 +51,7 @@
 }
 
 body {
-	background-image: url(/img/backgroundPage.png);
+	background-image: url(../img/backgroundPage.png);
 }
 
 /* Общие стили */
@@ -85,7 +85,7 @@ body {
 	width: 100%;
 	min-height: 1080px;
 
-	background: #79156a url(/img/headerBackground.png);
+	background: #79156a url(../img/headerBackground.png);
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
@@ -116,7 +116,7 @@ body {
 	color: #ffffff;
 	border: none;
 	background-color: rgba(255, 255, 255, 0);
-	background-image: url(/img/menuIcon.svg);
+	background-image: url(../img/menuIcon.svg);
 	background-repeat: no-repeat;
 	background-position: right;
 
@@ -176,7 +176,7 @@ body {
 	width: 580px;
 	height: 290px;
 
-	background-image: url(/img/videoPlug.png);
+	background-image: url(../img/videoPlug.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -192,7 +192,7 @@ body {
 	color: #ffffff;
 	border: none;
 	background-color: rgba(255, 255, 255, 0);
-	background-image: url(/img/playIconOpacity.svg);
+	background-image: url(../img/playIconOpacity.svg);
 	background-repeat: no-repeat;
 	background-position: left;
 
@@ -207,13 +207,13 @@ body {
 }
 
 .button-play:hover {
-	background-image: url(/img/playIcon.svg);
+	background-image: url(../img/playIcon.svg);
 
 	text-decoration: underline;
 }
 
 .button-play:active {
-	background-image: url(/img/playIconActive.svg);
+	background-image: url(../img/playIconActive.svg);
 
 	text-decoration: underline;
 }
@@ -258,7 +258,7 @@ body {
 
 	border-radius: 100px;
 	background-color: rgba(225, 36, 86, 0.5);
-	background-image: url(/img/scrollIcon.svg);
+	background-image: url(../img/scrollIcon.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 
@@ -342,7 +342,7 @@ body {
 	width: 100%;
 	height: 550px;
 
-	background: url(/img/rocketBackground.png);
+	background: url(../img/rocketBackground.png);
 	background-repeat: no-repeat;
 	background-position: bottom center;
 	background-size: cover;
@@ -424,7 +424,7 @@ body {
 
 	position: relative;
 
-	background: url(/img/skyBackground.png);
+	background: url(../img/skyBackground.png);
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
@@ -533,7 +533,7 @@ body {
 	position: relative;
 
 	border-top: 1px solid #12102e;
-	background: url(/img/spaceBackground.png);
+	background: url(../img/spaceBackground.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -549,7 +549,7 @@ body {
 	height: 570px;
 	margin-top: 60px;
 
-	background-image: url(/img/videoPlugTwo.png);
+	background-image: url(../img/videoPlugTwo.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -581,7 +581,7 @@ body {
 	color: #908bb1;
 	border: none;
 	background: none;
-	background-image: url(/img/arrowIcon.png);
+	background-image: url(../img/arrowIcon.png);
 	background-repeat: no-repeat;
 	background-position-x: 200px;
 	background-position-y: 50%;
@@ -594,7 +594,7 @@ body {
 	font-family: "Proxima Nova Bold";
 
 	color: #ffffff;
-	background-image: url(/img/threeArrowIcon.png);
+	background-image: url(../img/threeArrowIcon.png);
 	background-repeat: no-repeat;
 }
 
@@ -828,7 +828,7 @@ body {
 .footer {
 	border-top: 1px solid rgba(255, 255, 255, 0);
 	border-bottom: 1px solid rgba(255, 255, 255, 0);
-	background: url(/img/footerBackground750.png);
+	background: url(../img/footerBackground750.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -849,7 +849,7 @@ body {
 	padding-right: 72.5px;
 	padding-left: 72.5px;
 
-	background: url(/img/formBackground.png);
+	background: url(../img/formBackground.png);
 }
 
 .form-subscribe__title {
@@ -974,28 +974,28 @@ body {
 } 
 
 .link-social--vk {
-	background-image: url(/img/vkIcon.svg);
+	background-image: url(../img/vkIcon.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
 }
 
 .link-social--twitter {
-	background-image: url(/img/twitterIcon.svg);
+	background-image: url(../img/twitterIcon.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
 }
 
 .link-social--facebook {
-	background-image: url(/img/facebookIcon.svg);
+	background-image: url(../img/facebookIcon.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
 }
 
 .link-social--youtube {
-	background-image: url(/img/youtubeIcon.svg);
+	background-image: url(../img/youtubeIcon.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -1033,7 +1033,7 @@ body {
 
 	border: none;
 	background-color: rgba(255, 255, 255, 0);
-	background-image: url(/img/closeButton.svg);
+	background-image: url(../img/closeButton.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -1098,7 +1098,7 @@ body {
 		width: 100%;
 		height: 700px;
 
-		background: url(/img/rocketBackground.png);
+		background: url(../img/rocketBackground.png);
 		background-repeat: no-repeat;
 		background-position: 75% 104%;
 	}
@@ -1117,7 +1117,7 @@ body {
 
 		position: relative;
 
-		background: url(/img/skyBackground750.png);
+		background: url(../img/skyBackground750.png);
 		background-repeat: no-repeat;
 		background-position: top center;
 		background-size: cover;
@@ -1236,7 +1236,7 @@ body {
 		margin: 0 auto;
 		margin-top: 60px;
 
-		background-image: url(/img/videoPlugTwo.png);
+		background-image: url(../img/videoPlugTwo.png);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -1248,7 +1248,7 @@ body {
 	.header {
 		min-height: 1024px;
 
-		background: #79156a url(/img/headerBackground750.png);
+		background: #79156a url(../img/headerBackground750.png);
 		background-repeat: no-repeat;
 		background-position: top center;
 		background-size: cover;
@@ -1345,7 +1345,7 @@ body {
 	.header {
 		min-height: 600px;
 
-		background: #79156a url(/img/headerBackground320.png);
+		background: #79156a url(../img/headerBackground320.png);
 		background-repeat: no-repeat;
 		background-position: top center;
 		background-size: cover;
@@ -1408,7 +1408,7 @@ body {
 		width: 100%;
 		height: 700px;
 
-		background: url(/img/rocketBackground320.png);
+		background: url(../img/rocketBackground320.png);
 		background-repeat: no-repeat;
 		background-position: 59% 100%;
 	}
@@ -1449,7 +1449,7 @@ body {
 
 		position: relative;
 
-		background: url(/img/skyBackground320.png);
+		background: url(../img/skyBackground320.png);
 		background-repeat: no-repeat;
 		background-position: top center;
 		background-size: cover;
@@ -1508,7 +1508,7 @@ body {
 		margin: 0 auto;
 		margin-top: 60px;
 
-		background-image: url(/img/videoPlugTwo.png);
+		background-image: url(../img/videoPlugTwo.png);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -1530,7 +1530,7 @@ body {
 	}
 
 	.button-spoiler--active {
-		background-image: url(/img/arrowIconTop.png);
+		background-image: url(../img/arrowIconTop.png);
 		background-repeat: no-repeat;
 		background-position-y: 50%;
 	}
