@@ -10,44 +10,44 @@
 @font-face {
 	font-family: "Proxima Nova Thin";
 
-	src: url("/fonts/ProximaNovaT-Thin.woff") format("woff"),
-	url("/fonts/ProximaNovaT-Thin.woff2") format("woff2");
+	src: url("../fonts/ProximaNovaT-Thin.woff") format("woff"),
+	url("../fonts/ProximaNovaT-Thin.woff2") format("woff2");
 }
 @font-face {
 	font-family: "Proxima Nova Light";
 
-	src: url("/fonts/ProximaNova-Light.woff") format("woff"),
-	url("/fonts/ProximaNova-Light.woff2") format("woff2");
+	src: url("../fonts/ProximaNova-Light.woff") format("woff"),
+	url("../fonts/ProximaNova-Light.woff2") format("woff2");
 }
 @font-face {
 	font-family: "Proxima Nova Regular";
 
-	src: url("/fonts/ProximaNova-Regular.woff") format("woff"),
-	url("/fonts/ProximaNova-Regular.woff2") format("woff2");
+	src: url("../fonts/ProximaNova-Regular.woff") format("woff"),
+	url("../fonts/ProximaNova-Regular.woff2") format("woff2");
 }
 @font-face {
 	font-family: "Proxima Nova Bold";
 
-	src: url("/fonts/ProximaNova-Bold.woff") format("woff"),
-	url("/fonts/ProximaNova-Bold.woff2") format("woff2");
+	src: url("../fonts/ProximaNova-Bold.woff") format("woff"),
+	url("../fonts/ProximaNova-Bold.woff2") format("woff2");
 }
 @font-face {
 	font-family: "Proxima Nova Black";
 
-	src: url("/fonts/ProximaNova-Black.woff") format("woff"),
-	url("/fonts/ProximaNova-Black.woff2") format("woff2");
+	src: url("../fonts/ProximaNova-Black.woff") format("woff"),
+	url("../fonts/ProximaNova-Black.woff2") format("woff2");
 }
 @font-face {
 	font-family: "Proxima Nova Black";
 
-	src: url("/fonts/ProximaNova-Black.woff") format("woff"),
-	url("/fonts/ProximaNova-Black.woff2") format("woff2");
+	src: url("../fonts/ProximaNova-Black.woff") format("woff"),
+	url("../fonts/ProximaNova-Black.woff2") format("woff2");
 }
 @font-face {
 	font-family: "Myriad Pro Regular";
 
-	src: url("/fonts/MyriadPro-Regular.woff") format("woff"),
-	url("/fonts/MyriadPro-Regular.woff2") format("woff2");
+	src: url("../fonts/MyriadPro-Regular.woff") format("woff"),
+	url("../fonts/MyriadPro-Regular.woff2") format("woff2");
 }
 
 body {
