@@ -5,152 +5,287 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Panteon – Первый город на планете Марс</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div id="modalMenu" class="modal-menu">
+        <button id="buttonModalClose" class="modalMenu__button-close"></button>
+        <h2 class="modal-menu__title">Меню</h2>
+        <a href="#statistics" class="modal-menu__link">Статистика</a>
+        <a href="#aboutMars" class="modal-menu__link">Что такое Марс?</a>
+        <a href="#ilonMask" class="modal-menu__link">Илон Маск</a>
+        <a href="#costFlight" class="modal-menu__link">Стоимость</a>
+        <a href="#pitfalls" class="modal-menu__link">Подводные камни</a>
+        <a href="#organizationLife" class="modal-menu__link">Организация жизни</a>
+        <a href="#whenStart" class="modal-menu__link">Когда вылетаем?</a>
+    </div>
     <header class="header">
         <div class="wrapper">
-            <div class="header__top-panel">
-                <div class="header__logo"></div>
-                <button class="header__menu-button">Меню</button>
+            <div class="header__panel-top">
+                <img class="header__logo" src="img/logo.svg" alt="Логотип Panteon" width="180px" height="50px">
+                <button id="buttonModal" class="header__button-menu">Меню</button>
             </div>
-            <div class="header__bottom-panel">
+            <div class="header__panel-bottom">
                 <h1 class="header__title-header"><span class="title-header--thin">Пункт назначения:</span> пантеон,</h1>
                 <h1 class="header__title-header title-header--big">Марс</h1>
-                <div class="header__video-container">
+                <div class="header__container-video">
                     <div class="header__video">
-                        <button class="play-button">Смотреть видео</button>
+                        <button class="button-play">Смотреть видео</button>
                     </div>
-                    <div class="heder__video-text-container">
-                        <span class="heder__video-text-line"></span>
-                        <p class="heder__video-text">Первый город на планете Марс недалеко от горы Олимп</p> 
+                    <div class="heder__container-text-video">
+                        <span class="heder__text-line-video"></span>
+                        <p class="heder__text-video">Первый город на планете Марс недалеко от горы Олимп</p> 
                     </div>
                 </div>
-                <div class="header_scroll-button-container">
-                    <button class="header-scroll-button"></button>
+                <div class="header__container-button-scroll">
+                    <a href="#statistics" class="button-scroll"></a>  
                 </div>
             </div>
         </div>
     </header>
-    <section class="statistics-section">
-        <div class="wrapper">
-            <div class="statistics-section__card-container">
-                <div class="statistics-section__statistics-card statistics-card--line">
-                    <h2 class="statistics-section__statistics-card-title">4</h2>
-                    <p class="statistics-section__statistics-card-text">четвёртая планета по удалённости от Солнца</p>
-                </div>
-                <div class="statistics-section__statistics-card statistics-card--line">
-                    <h2 class="statistics-section__statistics-card-title">7</h2>
-                    <p class="statistics-section__statistics-card-text">седьмая по размерам планета Солнечной системы</p>
-                </div>
-                <div class="statistics-section__statistics-card statistics-card--line">
-                    <h2 class="statistics-section__statistics-card-title">10,7%</h2>
-                    <p class="statistics-section__statistics-card-text">массы Земли (ваш вес будет в 3 раза меньше, чем на Земле)</p>
-                </div>
-                <div class="statistics-section__statistics-card statistics-card--line">
-                    <h2 class="statistics-section__statistics-card-title">2</h2>
-                    <p class="statistics-section__statistics-card-text">спутника вместо Луны (как картошка, только больше)</p>
-                </div>
-                <div class="statistics-section__statistics-card statistics-card--line">
-                    <h2 class="statistics-section__statistics-card-title">21 км</h2>
-                    <p class="statistics-section__statistics-card-text">высота самой высокой горы Марса</p>
-                </div>
-                <div class="statistics-section__statistics-card">
-                    <h2 class="statistics-section__statistics-card-title">+20</h2>
-                    <p class="statistics-section__statistics-card-text">максимальная температура на поверхности</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="about-mars-section">
-        <div class="wrapper">
-            <h1 class="section-title section-title--red">Марс. Вспомнить всё</h1>
-            <div class="about-mars-section__paragraph-container">
-                <div class="about-mars-section__paragraph">
-                    <h2 class="about-mars-section__title-paragraph">Что такое Марс?</h2>
-                    <p class="about-mars-section__text-paragraph">Планета Солнечной системы, названа в честь Марса — древнеримского бога войны. Иногда Марс называют «красной планетой» из-за красного оттенка поверхности, придаваемого ей оксидом железа.</p>
-                    <p class="about-mars-section__text-paragraph">Особенности планеты — наличие слабой отмосферы, состоящей в основном из улекислого газа, времена года, пылевые бури, сильная эррозия почв.</p>
-                </div>
-                <div class="about-mars-section__paragraph">
-                    <h2 class="about-mars-section__title-paragraph">Где это? Как туда доехать?</h2>
-                    <p class="about-mars-section__text-paragraph">Расстояние до Марса — почти 56 миллионов километров. Чтобы преодалеть такое расстояние, нужно лететь на межпланетоном корабле 7-8 месяцев.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="about-ilon-section">
-        <div class="wrapper">
-            <h1 class="section-title section-title--red">От идеи до реализации</h1>
-            <div class="about-ilon-section__paragraph">
-                <h2 class="about-ilon-section__title-paragraph">Илон Маск. Гений или безумец?</h2>
-                <p class="about-ilon-section__text-paragraph">Канадско-американский инженер, предприниматель, изобретатель и инвестор; миллиардер. Основатель компаний SpaceX и X.com, позже переименованной в PayPal. Планирует потратить большую часть накоплений на реализацию своей мечты, а также мечты многих тысяч романтиков, писателей, учёных: создать внеземную цивилизацию.</p>
-                <div class="about-ilon-section__image-container">
-                    <img class="about-ilon-section__image-ilon" src="/img/ilon.png" alt="Илон Маск">     
-                </div>              
-                <p class="about-ilon-section__text-paragraph text-paragraph--red">Мы должны сделать эту мечту реальностью за наше время жизни. Любой человек, который пожелает отправиться на Марс, должен иметь такую возможность</p>
-                <p class="about-ilon-section__text-paragraph text-paragraph--long">— заявил Маск на Международной астронавтической конференции в Гвадалахаре (Мексика). Он обосновал необходимость своего проекта вопросом выживания человечества, которое для своего сохранения должно стать «космическим видом».</p>
-                <p class="about-ilon-section__text-paragraph text-paragraph--long">Илон поставил перед собой цель: скоратить стоимость вывода кораблей в космос в 10 раз, что станет первым шагом для человечества в освоении Марса.</p>
-            </div>    
-        </div>
-    </section>
-    <section class="flight-cost-section">
-        <div class="wrapper wrapper-noindentation">
-            <div class="flight-cost-section__content-container">
-                <div class="flight-cost-section__image-container">
-                    <img class="flight-cost-section__image" src="/img/rocket.png" alt="Ракета">
-                </div>
-                <div class="flight-cost-section__info-container">
-                    <div class="flight-cost-section__top-panel">
-                        <h2 class="flight-cost-section__title">Стоимость перелёта</h2>
-                        <p class="flight-cost-section__text-cost-section text-cost-section">Высадка двоих астронавтов на Луну обошлась США в 20 млрд. долларов. Маск стремится сократить эту цифру в 20 000 раз, что составит <span class="text-cost-section--bold">500 000 долларов</span> на человека.</p>
+    <main class="main">
+        <section id="statistics" class="statistics-section">
+            <div class="wrapper">
+                <div class="statistics-section__container-card">
+                    <div class="statistics-section__card-statistics card-statistics--line"> 
+                        <h2 class="statistics-section__title-card-statistics">4</h2>
+                        <p class="statistics-section__text-card-statistics">четвёртая планета по удалённости от Солнца</p>
                     </div>
-                    <div class="flight-cost-section__bottom-panel">
-                        <h3 class="flight-cost-section__label-price">$500 k</h3>
-                        <p class="flight-cost-section__label-price-annotation">и ты на Марсе!</p>
-                        <button class="flight-cost-section__button">Я готов лететь</button>
+                    <div class="statistics-section__card-statistics card-statistics--line">
+                        <h2 class="statistics-section__title-card-statistics">7</h2>
+                        <p class="statistics-section__text-card-statistics">седьмая по размерам планета Солнечной системы</p>
+                    </div>
+                    <div class="statistics-section__card-statistics card-statistics--line">
+                        <h2 class="statistics-section__title-card-statistics">10,7%</h2>
+                        <p class="statistics-section__text-card-statistics">массы Земли (ваш вес будет в 3 раза меньше, чем на Земле)</p>
+                    </div>
+                    <div class="statistics-section__card-statistics card-statistics--line">
+                        <h2 class="statistics-section__title-card-statistics">2</h2>
+                        <p class="statistics-section__text-card-statistics">спутника вместо Луны (как картошка, только больше)</p>
+                    </div>
+                    <div class="statistics-section__card-statistics card-statistics--line">
+                        <h2 class="statistics-section__title-card-statistics">21 км</h2>
+                        <p class="statistics-section__text-card-statistics">высота самой высокой горы Марса</p>
+                    </div>
+                    <div class="statistics-section__card-statistics">
+                        <h2 class="statistics-section__title-card-statistics">+20</h2>
+                        <p class="statistics-section__text-card-statistics">максимальная температура на поверхности</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="about-life-space-section">
-        <div class="wrapper">
-            <h1 class="section-title section-title--white">Подводные камни в масштабах космоса</h1>
-            <div class="about-life-space-section__video">
-                <button class="play-button play-button--none-text">Смотреть видео</button>
+        </section>
+        <section id="aboutMars" class="about-mars-section">
+            <div class="wrapper">
+                <h1 class="title-section title-section--red">Марс. Вспомнить всё</h1>
+                <div class="about-mars-section__container-paragraph">
+                    <div class="about-mars-section__paragraph">
+                        <h2 class="about-mars-section__title-paragraph">Что такое Марс?</h2>
+                        <p class="about-mars-section__text-paragraph">Планета Солнечной системы, названа в честь Марса — древнеримского бога войны. Иногда Марс называют «красной планетой» из-за красного оттенка поверхности, придаваемого ей оксидом железа.</p>
+                        <p class="about-mars-section__text-paragraph">Особенности планеты — наличие слабой отмосферы, состоящей в основном из улекислого газа, времена года, пылевые бури, сильная эррозия почв.</p>
+                    </div>
+                    <div class="about-mars-section__paragraph">
+                        <h2 class="about-mars-section__title-paragraph">Где это? Как туда доехать?</h2>
+                        <p class="about-mars-section__text-paragraph">Расстояние до Марса — почти 56 миллионов километров. Чтобы преодалеть такое расстояние, нужно лететь на межпланетоном корабле 7-8 месяцев.</p>
+                    </div>
+                </div>
             </div>
-            <div class="about-life-space-section__spoiler-container">
-                <div class="about-life-space-section__spoiler">
-                    <button class="about-life-space-section__spoiler-button spoiler-button--active">Жить или выживать?</button>
-                    <div class="about-life-space-section__spoiler-content spoiler-content--active">
-                        <h3 class="about-life-space-section__title-spoiler">Жить или выживать?</h3>
-                        <div class="about-life-space-section__text-spoiler">
-                            <p class="about-life-space-section__paragraph-text-spoiler">Чем отличаются Земля и Марс? Какие условия встретят новых поселенцев?</p>
-                            <p class="about-life-space-section__paragraph-text-spoiler">Марс холодная и засушливая планета, на которой есть своя атмосфера, на 96% состоящая из углекислых газов, а минимальная температура опускается до -140 градусов по Цельсию. Каждый год по весне на планете случаются пылевые бури, длящиеся от нескольких часов до нескольких месяцев.</p>
-                            <p class="about-life-space-section__paragraph-text-spoiler">На планете отсутствует магнитное поле, поэтому радиационный фон повышен. А низкая гравитация при длитеьном пребывании на Марсе сделает возвращение на Землю невозможным. Полёт на Марс — билет в один конец с целью создать новую цивилизацию.</p>
+        </section>
+        <section id="ilonMask" class="about-ilon-section">
+            <div class="wrapper">
+                <h1 class="title-section title-section--red">От идеи до реализации</h1>
+                <div class="about-ilon-section__paragraph">
+                    <h2 class="about-ilon-section__title-paragraph">Илон Маск. Гений или безумец?</h2>
+                    <p class="about-ilon-section__text-paragraph">Канадско-американский инженер, предприниматель, изобретатель и инвестор; миллиардер. Основатель компаний SpaceX и X.com, позже переименованной в PayPal. Планирует потратить большую часть накоплений на реализацию своей мечты, а также мечты многих тысяч романтиков, писателей, учёных: создать внеземную цивилизацию.</p>
+                    <div class="about-ilon-section__container-image">
+                        <img class="about-ilon-section__image-ilon" src="img/ilon.png" alt="Илон Маск">     
+                    </div>              
+                    <p class="about-ilon-section__text-paragraph text-paragraph--red">Мы должны сделать эту мечту реальностью за наше время жизни. Любой человек, который пожелает отправиться на Марс, должен иметь такую возможность</p>
+                    <p class="about-ilon-section__text-paragraph text-paragraph--long">— заявил Маск на Международной астронавтической конференции в Гвадалахаре (Мексика). Он обосновал необходимость своего проекта вопросом выживания человечества, которое для своего сохранения должно стать «космическим видом».</p>
+                    <p class="about-ilon-section__text-paragraph text-paragraph--long">Илон поставил перед собой цель: скоратить стоимость вывода кораблей в космос в 10 раз, что станет первым шагом для человечества в освоении Марса.</p>
+                </div>    
+            </div>
+        </section>
+        <section id="costFlight" class="flight-cost-section">
+            <div class="wrapper wrapper-noindentation">
+                <div class="flight-cost-section__container-content">
+                    <div class="flight-cost-section__container-image">
+                        <img class="flight-cost-section__image" src="img/rocket.png" alt="Ракета">
+                    </div>
+                    <div class="flight-cost-section__info-container">
+                        <div class="flight-cost-section__panel-top">
+                            <h2 class="flight-cost-section__title">Стоимость перелёта</h2>
+                            <p class="flight-cost-section__text-cost text-cost">Высадка двоих астронавтов на Луну обошлась США в 20 млрд. долларов. Маск стремится сократить эту цифру в 20 000 раз, что составит <span class="text-cost--bold">500 000 долларов</span> на человека.</p>
+                        </div>
+                        <div class="flight-cost-section__panel-bottom">
+                            <h3 class="flight-cost-section__label-price">$500 k</h3>
+                            <p class="flight-cost-section__label-price-annotation">и ты на Марсе!</p>
+                            <a href="#whenStart" class="flight-cost-section__button">Я готов лететь</a>
                         </div>
                     </div>
                 </div>
-                <div class="about-life-space-section__spoiler">
-                    <button class="about-life-space-section__spoiler-button">Готовы ли технологии?</button>
-                    <div class="about-life-space-section__spoiler-content">
-                        <h3 class="about-life-space-section__title-spoiler-content">Готовы ли технологии?</h3>
-                    </div>
+            </div>
+        </section>
+        <section id="pitfalls" class="about-life-space-section">
+            <div class="wrapper">
+                <h1 class="title-section title-section--white">Подводные камни в масштабах космоса</h1>
+                <div class="about-life-space-section__plug-video">
+                    <button class="button-play button-play--none-text">Смотреть видео</button>
                 </div>
-                <div class="about-life-space-section__spoiler">
-                    <button class="about-life-space-section__spoiler-button">Путешествие на грани фантастики</button>
-                    <div class="about-life-space-section__spoiler-content">
-                        <h3 class="about-life-space-section__title-spoiler-content">Путешествие на грани фантастики</h3>
+                <div class="about-life-space-section__container-spoiler">
+                    <div class="about-life-space-section__spoiler">
+                        <button data-spoiler="oneSpoiler" class="about-life-space-section__button-spoiler button-spoiler button-spoiler--active">Жить или выживать?</button>
+                        <div id="oneSpoiler" class="about-life-space-section__content-spoiler content-spoiler content-spoiler--active">
+                            <h3 class="about-life-space-section__title-spoiler">Жить или выживать?</h3>
+                            <div class="about-life-space-section__text-spoiler">
+                                <p class="about-life-space-section__paragraph-text-spoiler">Чем отличаются Земля и Марс? Какие условия встретят новых поселенцев?</p>
+                                <p class="about-life-space-section__paragraph-text-spoiler">Марс холодная и засушливая планета, на которой есть своя атмосфера, на 96% состоящая из углекислых газов, а минимальная температура опускается до -140 градусов по Цельсию. Каждый год по весне на планете случаются пылевые бури, длящиеся от нескольких часов до нескольких месяцев.</p>
+                                <p class="about-life-space-section__paragraph-text-spoiler">На планете отсутствует магнитное поле, поэтому радиационный фон повышен. А низкая гравитация при длитеьном пребывании на Марсе сделает возвращение на Землю невозможным. Полёт на Марс — билет в один конец с целью создать новую цивилизацию.</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="about-life-space-section__spoiler">
-                    <button class="about-life-space-section__spoiler-button">Жизнь на Марсе</button>
-                    <div class="about-life-space-section__spoiler-content">
-                        <h3 class="about-life-space-section__title-spoiler-content">Жизнь на Марсе</h3>
+                    <div class="about-life-space-section__spoiler">
+                        <button data-spoiler="twoSpoiler" class="about-life-space-section__button-spoiler button-spoiler">Готовы ли технологии?</button>
+                        <div id="twoSpoiler" class="about-life-space-section__content-spoiler content-spoiler">
+                            <h3 class="about-life-space-section__title-spoiler">Готовы ли технологии?</h3>
+                            <div class="about-life-space-section__text-spoiler">
+                                <p class="about-life-space-section__paragraph-text-spoiler">Разнообразный и богатый опыт начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития.</p>
+                                <p class="about-life-space-section__paragraph-text-spoiler">С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+                                <p class="about-life-space-section__paragraph-text-spoiler">Равным образом дальнейшее развитие различных форм деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности играет важную роль в формировании направлений прогрессивного развития.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-life-space-section__spoiler">
+                        <button data-spoiler="threeSpoiler" class="about-life-space-section__button-spoiler button-spoiler">Путешествие на грани фантастики</button>
+                        <div id="threeSpoiler" class="about-life-space-section__content-spoiler content-spoiler">
+                            <h3 class="about-life-space-section__title-spoiler">Путешествие на грани фантастики</h3>
+                            <div class="about-life-space-section__text-spoiler">
+                                <p class="about-life-space-section__paragraph-text-spoiler">Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. </p>
+                                <p class="about-life-space-section__paragraph-text-spoiler">Повседневная практика показывает, что дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки существенных финансовых и административных условий.</p>
+                                <p class="about-life-space-section__paragraph-text-spoiler">Задача организации, в особенности же дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке систем массового участия. Товарищи! постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-life-space-section__spoiler">
+                        <button data-spoiler="fourSpoiler" class="about-life-space-section__button-spoiler button-spoiler">Жизнь на Марсе</button>
+                        <div id="fourSpoiler" class="about-life-space-section__content-spoiler content-spoiler">
+                            <h3 class="about-life-space-section__title-spoiler">Жизнь на Марсе</h3>
+                            <div class="about-life-space-section__text-spoiler">
+                                <p class="about-life-space-section__paragraph-text-spoiler">Не следует, однако забывать, что новая модель организационной деятельности способствует подготовки и реализации направлений прогрессивного развития.</p>
+                                <p class="about-life-space-section__paragraph-text-spoiler">Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения систем массового участия.</p>
+                                <p class="about-life-space-section__paragraph-text-spoiler">Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности требуют определения и уточнения соответствующий условий активизации.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <section id="organizationLife" class="organization-life-space-section">
+            <div class="wrapper">
+                <h1 class="title-section title-section--red">Организация жизни в колонии</h1>
+                <div class="organization-life-space-section__container-content">
+                    <div class="organization-life-space-section__container-spoiler">
+                        <button data-spoiler="teacup" class="button-organization-spoiler button-organization-spoiler--teacup button-organization-spoiler--active">
+                            <img class="button-organization-spoiler__image" src="img/teacup.svg" alt="Проживание" height="30px" width="30px">
+                            <span class="button-organization-spoiler__label">Проживание</span>
+                        </button>
+                        <div id="teacup" class="organization-life-space-section__content-organization-spoiler content-organization-spoiler--active">
+                            <img src="img/ilonEngineer.png" alt="Проживание" class="organization-life-space-section__image-organization-spoiler" width="985px" height="460px">
+                            <h3 class="organization-life-space-section__title-organization-spoiler">Проживание</h3>
+                            <div class="organization-life-space-section__text-organization-spoiler">
+                                <p class="organization-life-space-section__paragraph-text-organization-spoiler">В основе жилых помещений лежат надувные компоненты — спальня, рабочая зона, гостиная, парник для выращивания зелени — 50 м2 на человека. Благодаря этим компонентам, колонисты смогут принять душ, приготовить свежую пищу, носить обычную одежду. Весь комплекс соединен сетью ходов.</p>
+                            </div>
+                            <button class="organization-life-space-section__button-more-organization-spoiler">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="organization-life-space-section__container-spoiler">
+                        <button data-spoiler="helmet" class="button-organization-spoiler button-organization-spoiler--helmet">
+                            <img class="button-organization-spoiler__image" src="img/helmet.svg" alt="Самообеспечение" height="30px" width="30px">
+                            <span class="button-organization-spoiler__label">Самообеспечение</span>
+                        </button>
+                        <div id="helmet" class="organization-life-space-section__content-organization-spoiler">
+                            <img src="img/sustainment.jpg" alt="Самообеспечение" class="organization-life-space-section__image-organization-spoiler" width="985px" height="460px">
+                            <h3 class="organization-life-space-section__title-organization-spoiler">Самообеспечение</h3>
+                            <div class="organization-life-space-section__text-organization-spoiler">
+                                <p class="organization-life-space-section__paragraph-text-organization-spoiler">Задача организации, в особенности же рамки и место обучения кадров влечет за собой процесс внедрения и модернизации новых предложений. Повседневная практика показывает, что сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.</p>
+                            </div>
+                            <button class="organization-life-space-section__button-more-organization-spoiler">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="organization-life-space-section__container-spoiler">
+                        <button data-spoiler="microscope" class="button-organization-spoiler button-organization-spoiler--microscope">
+                            <img class="button-organization-spoiler__image" src="img/microscope.svg" alt="Исследования" height="30px" width="30px">
+                            <span class="button-organization-spoiler__label">Исследования</span>
+                        </button>
+                        <div id="microscope" class="organization-life-space-section__content-organization-spoiler">
+                            <img src="img/researches.jpg" alt="Исследования" class="organization-life-space-section__image-organization-spoiler" width="985px" height="460px">
+                            <h3 class="organization-life-space-section__title-organization-spoiler">Исследования</h3>
+                            <div class="organization-life-space-section__text-organization-spoiler">
+                                <p class="organization-life-space-section__paragraph-text-organization-spoiler">Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании существенных финансовых и административных условий. Товарищи! сложившаяся структура организации позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач.</p>
+                            </div>
+                            <button class="organization-life-space-section__button-more-organization-spoiler">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="organization-life-space-section__container-spoiler">
+                        <button data-spoiler="photo" class="button-organization-spoiler button-organization-spoiler--photo">
+                            <img class="button-organization-spoiler__image" src="img/photo.svg" alt="Фотографии" height="30px" width="30px">
+                            <span class="button-organization-spoiler__label">Фотографии</span>
+                        </button>
+                        <div id="photo" class="organization-life-space-section__content-organization-spoiler">
+                            <img src="img/photoMars.jpg" alt="Фотографии" class="organization-life-space-section__image-organization-spoiler" width="985px" height="460px">
+                            <h3 class="organization-life-space-section__title-organization-spoiler">Фотографии</h3>
+                            <div class="organization-life-space-section__text-organization-spoiler">
+                                <p class="organization-life-space-section__paragraph-text-organization-spoiler">С другой стороны новая модель организационной деятельности позволяет оценить значение соответствующий условий активизации. Разнообразный и богатый опыт консультация с широким активом играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач.</p>
+                            </div>
+                            <button class="organization-life-space-section__button-more-organization-spoiler">Подробнее</button>
+                        </div>
+                    </div>
+                    <div class="organization-life-space-section__container-spoiler">
+                        <button data-spoiler="leaves" class="button-organization-spoiler button-organization-spoiler--leaves button-organization-spoiler--end">
+                            <img class="button-organization-spoiler__image" src="img/leaves.svg" alt="Озеленение" height="30px" width="30px">
+                            <span class="button-organization-spoiler__label">Озеленение</span>
+                        </button>
+                        <div id="leaves" class="organization-life-space-section__content-organization-spoiler ">
+                            <img src="img/greening.jpg" alt="Озеленение" class="organization-life-space-section__image-organization-spoiler" width="985px" height="460px">
+                            <h3 class="organization-life-space-section__title-organization-spoiler">Озеленение</h3>
+                            <div class="organization-life-space-section__text-organization-spoiler">
+                                <p class="organization-life-space-section__paragraph-text-organization-spoiler">Равным образом новая модель организационной деятельности требуют определения и уточнения дальнейших направлений развития. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности требуют от нас анализа соответствующий условий активизации. </p>
+                            </div>
+                            <button class="organization-life-space-section__button-more-organization-spoiler">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="whenStart" class="footer">
+        <div class="wrapper wrapper-noindentation">
+            <h1 class="title-section title-section--white title-section--footer">Деньги приготовил. Когда вылетаем?</h1>
+            <div class="footer__panel-top">
+                <form class="form-subscribe" action="" method="post">
+                    <h3 class="form-subscribe__title">Будь в курсе новостей</h3>
+                    <input class="form-subscribe__input" id="name" name="name" type="text" autocorrect="off" autocomplete="name" placeholder="Имя">
+                    <input class="form-subscribe__input" id="email" name="email" type="text" autocorrect="off" autocomplete="name" placeholder="Email">
+                    <button class="form-subscribe__button">Подписаться</button>
+                </form>
+                <div class="footer__description">
+                    <p class="footer__paragraph">Первый «частный» полёт на Марс осуществит в 2018 году в беспилотном варианте корабль Dragon V2 с помощью тяжёлой ракеты Falcon Heavy. После этого запланированы две миссии в 2020 году, как минимум одна в 2022-м и, вероятно, пилотируемая миссия через два года с достижением Марса в 2025 году.</p>
+                    <p class="footer__paragraph">Для всех желающих открыты курсы подготовки.</p>
+                    <button class="footer__button-about-subscribe">Критерии отбора</button>
+                </div>
+            </div>
+            <div class="footer__panel-bottom">
+                <img class="footer__logo" src="img/logoFooter.svg" alt="Логотип Panteon" width="140px" height="30px">
+                <a href="#" class="footer__link-about">Подробнее о проекте</a>
+                <div class="footer__container-social">
+                    <span class="footer__social-label">Следуйте за нами</span>
+                    <a href="" class="footer__link-social link-social--vk">ВК</a>
+                    <a href="" class="footer__link-social link-social--twitter">Twitter</a>
+                    <a href="" class="footer__link-social link-social--facebook">Facebook</a>
+                    <a href="" class="footer__link-social link-social--youtube">YouTube</a>
+                </div>
+            </div>
         </div>
-    </section>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

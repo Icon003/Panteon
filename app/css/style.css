@@ -2,6 +2,8 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+
+	-webkit-text-size-adjust: none;
 }
 
 /* Подключаем шрифты */
@@ -48,6 +50,10 @@
 	url("/fonts/MyriadPro-Regular.woff2") format("woff2");
 }
 
+body {
+	background-image: url(/img/backgroundPage.png);
+}
+
 /* Общие стили */
 .wrapper {
 	max-width: 1200px;
@@ -56,7 +62,7 @@
 	padding-left: 15px;
 }
 
-.section-title {
+.title-section {
 	width: 100%;
 	margin-top: 110px;
 
@@ -64,11 +70,11 @@
 	font-size: 60px;
 }
 
-.section-title--red {
+.title-section--red {
 	color: #e12457;
 }
 
-.section-title--white {
+.title-section--white {
 	color: #ffffff;
 }
 
@@ -85,7 +91,7 @@
 	background-size: cover;
 }
 
-.header__top-panel {
+.header__panel-top {
 	display: flex;
 
 	justify-content: space-between;
@@ -98,12 +104,9 @@
 .header__logo {
 	width: 180px;
 	height: 50px;
-
-	background-image: url(/img/logo.png);
-	background-repeat: no-repeat;
 }
 
-.header__menu-button {
+.header__button-menu {
 	width: 110px;
 	height: 45px;
 
@@ -112,7 +115,7 @@
 
 	color: #ffffff;
 	border: none;
-	background-color: #ffffff00;
+	background-color: rgba(255, 255, 255, 0);
 	background-image: url(/img/menuIcon.svg);
 	background-repeat: no-repeat;
 	background-position: right;
@@ -121,7 +124,7 @@
 	text-align: left;
 }
 
-.header__bottom-panel {
+.header__panel-bottom {
 	display: flex;
 
 	flex-direction: column;
@@ -151,7 +154,7 @@
 	line-height: 180px;
 }
 
-.header__video-container {
+.header__container-video {
 	display: flex;
 
 	justify-content: center;
@@ -180,7 +183,7 @@
 	box-shadow: 0px 25px 38px 0px rgba(0, 0, 0, 0.48);
 }
 
-.play-button {
+.button-play {
 	width: 185px;
 	height: 55px;
 
@@ -188,8 +191,8 @@
 
 	color: #ffffff;
 	border: none;
-	background-color: #ffffff00;
-	background-image: url(/img/playIconOpacity.png);
+	background-color: rgba(255, 255, 255, 0);
+	background-image: url(/img/playIconOpacity.svg);
 	background-repeat: no-repeat;
 	background-position: left;
 
@@ -197,25 +200,25 @@
 	text-align: right;
 }
 
-.play-button--none-text {
+.button-play--none-text {
 	width: 55px;
 
 	font-size: 0;
 }
 
-.play-button:hover {
-	background-image: url(/img/playIcon.png);
+.button-play:hover {
+	background-image: url(/img/playIcon.svg);
 
 	text-decoration: underline;
 }
 
-.play-button:active {
-	background-image: url(/img/playIconActive.png);
+.button-play:active {
+	background-image: url(/img/playIconActive.svg);
 
 	text-decoration: underline;
 }
 
-.heder__video-text-container {
+.heder__container-text-video {
 	display: flex;
 
 	align-items: center;
@@ -225,7 +228,7 @@
 	right: 8%;
 }
 
-.heder__video-text-line {
+.heder__text-line-video {
 	width: 120px;
 	height: 2px;
 	margin-right: 30px;
@@ -233,7 +236,7 @@
 	background-color: rgb(255, 158, 189);
 }
 
-.heder__video-text {
+.heder__text-video {
 	width: 135px;
 	height: 75px;
 
@@ -242,16 +245,17 @@
 	color: #ffcfdf;
 }
 
-.header_scroll-button-container {
+.header__container-button-scroll {
 	width: 100%;
 	margin-top: 50px;
 }
 
-.header-scroll-button {
+.button-scroll {
+	display: block;
+
 	width: 75px;
 	height: 75px;
 
-	border: none;
 	border-radius: 100px;
 	background-color: rgba(225, 36, 86, 0.5);
 	background-image: url(/img/scrollIcon.svg);
@@ -261,11 +265,11 @@
 	cursor: pointer;
 }
 
-.header-scroll-button:hover {
+.button-scroll:hover {
 	background-color: rgba(225, 36, 86, 1);
 }
 
-.header-scroll-button:active {
+.button-scroll:active {
 	background-color: rgb(206, 33, 80);
 }
 
@@ -276,7 +280,7 @@
 	background-color: #fff5f8;
 }
 
-.statistics-section__card-container {
+.statistics-section__container-card {
 	display: flex;
 
 	justify-content: space-between;
@@ -288,7 +292,7 @@
 	padding-bottom: 40px;
 }
 
-.statistics-section__statistics-card {
+.statistics-section__card-statistics {
 	display: flex;
 
 	flex-direction: column;
@@ -298,13 +302,13 @@
 	margin: 20px;
 }
 
-.statistics-card--line {
+.card-statistics--line {
 	flex: 1;
 
 	position: relative;
 }
 
-.statistics-card--line::before {
+.card-statistics--line::before {
 	width: 2px;
 	height: 50px;
 
@@ -317,14 +321,14 @@
 	content: "";
 }
 
-.statistics-section__statistics-card-title {
+.statistics-section__title-card-statistics {
 	font-family: "Proxima Nova Bold";
 	font-size: 48px;
 
 	color: #e12457;
 }
 
-.statistics-section__statistics-card-text {
+.statistics-section__text-card-statistics {
 	width: 130px;
 
 	font-family: "Myriad Pro Regular";
@@ -344,7 +348,7 @@
 	background-size: cover;
 }
 
-.about-mars-section__paragraph-container {
+.about-mars-section__container-paragraph {
 	display: flex;
 
 	flex-wrap: wrap;
@@ -396,7 +400,7 @@
 	color: #e12457;
 }
 
-.about-ilon-section__image-container {
+.about-ilon-section__container-image {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -412,7 +416,7 @@
 	width: 100%;
 }
 
-.flight-cost-section__content-container {
+.flight-cost-section__container-content {
 	width: 100%;
 	height: 310px;
 	margin-top: 110px;
@@ -426,13 +430,13 @@
 	background-size: cover;
 }
 
-.flight-cost-section__image-container {
+.flight-cost-section__container-image {
 	position: absolute;
 	top: -30px;
 	left: 30px;
 }
 
-.flight-cost-section__top-panel {
+.flight-cost-section__panel-top {
 	padding-top: 55px;
 	padding-right: 130px;
 	padding-left: 400px;
@@ -445,7 +449,7 @@
 	color: #ffffff;
 }
 
-.flight-cost-section__text-cost-section {
+.flight-cost-section__text-cost {
 	margin-top: 25px;
 
 	font-family: "Proxima Nova Light";
@@ -454,11 +458,11 @@
 	color: #ffffff;
 }
 
-.text-cost-section--bold {
+.text-cost--bold {
 	font-family: "Proxima Nova Bold";
 }
 
-.flight-cost-section__bottom-panel {
+.flight-cost-section__panel-bottom {
 	display: flex;
 
 	justify-content: space-between;
@@ -500,6 +504,11 @@
 }
 
 .flight-cost-section__button {
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+
 	width: 200px;
 	height: 60px;
 
@@ -511,11 +520,14 @@
 	border-radius: 30px;
 	background-color: #ffffff;
 	box-shadow: 0px 0px 50px 20px #ffffff57;
+
+	text-decoration: none;
 }
 
 /* Стили для блока с информацией о жизни в космосе */
 .about-life-space-section {
 	width: 100%;
+	height: auto;
 	min-height: 1250px;
 
 	position: relative;
@@ -527,7 +539,7 @@
 	background-size: cover;
 }
 
-.about-life-space-section__video {
+.about-life-space-section__plug-video {
 	display: flex;
 
 	justify-content: center;
@@ -543,24 +555,23 @@
 	background-size: cover;
 }
 
-.about-life-space-section__spoiler-container {
+.about-life-space-section__container-spoiler {
 	display: flex;
 
 	flex-direction: column;
 
 	margin-top: 70px;
+
+	position: relative;
 }
 
 .about-life-space-section__spoiler {
 	display: flex;
 
 	align-items: flex-start;
-
-	position: relative;
 }
 
-
-.about-life-space-section__spoiler-button {
+.about-life-space-section__button-spoiler {
 	width: 240px;
 	margin-bottom: 60px;
 
@@ -579,7 +590,7 @@
 	text-align: left;
 }
 
-.spoiler-button--active {
+.button-spoiler--active {
 	font-family: "Proxima Nova Bold";
 
 	color: #ffffff;
@@ -587,16 +598,30 @@
 	background-repeat: no-repeat;
 }
 
-.about-life-space-section__spoiler-content {
+.about-life-space-section__content-spoiler {
 	display: none;
 
 	max-width: 770px;
+	min-height: 340px;
 
 	position: absolute;
+	top: 0;
 	left: 280px;
 }
 
-.spoiler-content--active {
+.about-life-space-section__content-spoiler::-webkit-scrollbar {
+	width: 0;
+}
+
+.about-life-space-section__content-spoiler {
+	-ms-overflow-style: none;
+}
+
+.about-life-space-section__content-spoiler {
+	overflow: -moz-scrollbars-none;
+}
+
+.content-spoiler--active {
 	display: block;
 }
 
@@ -621,22 +646,450 @@
 	margin-bottom: 20px;
 }
 
+/* Стили для блока с информацией об организации жизни в космосе */
+.organization-life-space-section__container-content {
+	display: flex;
+
+	flex-direction: column;
+	justify-content: space-between;
+
+	height: 720px;
+	margin-top: 50px;
+	margin-bottom: 140px;
+	padding-left: 30px;
+
+	position: relative;
+}
+
+.organization-life-space-section__container-content::before {
+	box-sizing: inherit;
+	width: 4px;
+	height: 100%;
+
+	position: absolute;
+	left: 0;
+
+	background-color: #e12457;
+
+	content: "";
+}
+
+.organization-life-space-section__container-spoiler {
+	list-style: none;
+}
+
+.button-organization-spoiler {
+	display: flex;
+
+	flex-direction: column;
+
+	min-width: 30px;
+	min-height: 30px;
+
+	position: relative;
+
+	font-family: "Proxima Nova Bold";
+	font-size: 20px;
+
+	color: #e12457;
+	border: none;
+	background: none;
+
+	cursor: pointer;
+}
+
+.button-organization-spoiler--active {
+	font-family: "Proxima Nova Bold";
+	font-size: 20px;
+
+	color: #e12457;
+}
+
+.button-organization-spoiler--end {
+	flex-direction: column-reverse;
+}
+
+.button-organization-spoiler > .button-organization-spoiler__label {
+	display: block;
+	overflow: hidden;
+
+	max-height: 0;
+	margin-top: 20px;
+
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.7s;
+	transition-property: max-height;
+
+	writing-mode: vertical-lr !important;
+	text-orientation: mixed;
+}
+
+.button-organization-spoiler--end > .button-organization-spoiler__label {
+	margin-bottom: 20px;
+}
+
+.button-organization-spoiler--active > .button-organization-spoiler__label {
+	max-height: 200px;
+}
+
+.button-organization-spoiler::before {
+	width: 16px;
+	height: 16px;
+
+	position: absolute;
+	top: 0;
+	left: -39px;
+
+	border: 3px solid #e12457;
+	border-radius: 100px;
+	background-color: #ffffff;
+
+	content: "";
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.7s;
+	transition-property: background-color;
+}
+
+.button-organization-spoiler--end::before {
+	top: auto;
+	bottom: 0;
+}
+
+.button-organization-spoiler--active::before {
+	background-color: #e12457;
+}
+
+.button-organization-spoiler__image {
+	pointer-events: none;
+}
+.button-organization-spoiler__label {
+	pointer-events: none;
+}
+
+.organization-life-space-section__content-organization-spoiler {
+	display: block;
+	overflow: hidden;
+
+	width: 985px;
+	height: auto;
+	max-height: 0;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	transition: max-height 1s;
+}
+
+.content-organization-spoiler--active {
+	display: block;
+
+	max-height: 720px;
+
+	z-index: 2;
+}
+
+.organization-life-space-section__image-organization-spoiler {
+	width: 100%;
+	height: 460px;
+}
+
+.organization-life-space-section__title-organization-spoiler {
+	margin-top: 40px;
+
+	font-family: "Proxima Nova Bold";
+	font-size: 24px;
+}
+
+.organization-life-space-section__text-organization-spoiler {
+	margin-top: 20px;
+
+	font-family: "Proxima Nova Light";
+	font-size: 16px;
+}
+
+.organization-life-space-section__button-more-organization-spoiler {
+	width: 160px;
+	height: 45px;
+	margin-top: 40px;
+
+	font-family: "Proxima Nova Bold";
+	font-size: 16px;
+
+	color: #ffffff;
+	border: none;
+	border-radius: 100px;
+	background-color: #e12457;
+
+	cursor: pointer;
+}
+
+/* Футер */
+.footer {
+	border-top: 1px solid rgba(255, 255, 255, 0);
+	border-bottom: 1px solid rgba(255, 255, 255, 0);
+	background: url(/img/footerBackground750.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.footer__panel-top {
+	display: flex;
+
+	margin-top: 70px;
+}
+
+.form-subscribe {
+	display: flex;
+
+	flex-direction: column;
+
+	height: 415px;
+	padding-right: 72.5px;
+	padding-left: 72.5px;
+
+	background: url(/img/formBackground.png);
+}
+
+.form-subscribe__title {
+	margin-top: 70px;
+
+	font-family: "Proxima Nova Bold";
+	font-size: 23px;
+
+	color: #ffffff;
+}
+
+.form-subscribe__input {
+	min-width: 250px;
+	height: 40px;
+	margin-top: 30px;
+	padding-left: 10px;
+
+	font-family: "Proxima Nova Light";
+	font-size: 16px;
+
+	color: #ffffff;
+	border: none;
+	border-bottom: 1px solid #ffffff;
+	border-radius: 0px;
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.form-subscribe__input::-webkit-input-placeholder {
+	color: #ffffff;
+}
+
+.form-subscribe__button {
+	min-width: 250px;
+	height: 55px;
+	margin-top: 55px;
+
+	font-family: "Proxima Nova Bold";
+	font-size: 18px;
+
+	color: #c2529a;
+	border: none;
+	border-radius: 100px;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 20px 1px #ffffff;
+
+	cursor: pointer;
+}
+
+.footer__description {
+	margin-left: 75px;
+}
+
+.footer__paragraph {
+	margin-bottom: 30px;
+
+	font-family: "Proxima Nova Light";
+	font-size: 16px;
+
+	color: #ffffff;
+}
+
+.footer__button-about-subscribe {
+	font-family: "Proxima Nova Regular";
+	font-size: 16px;
+
+	color: #ffffff;
+	border: none;
+	border-bottom: 1px solid #ffffff;
+	background-color: rgba(255, 255, 255, 0);
+
+	cursor: pointer;
+}
+
+.footer__panel-bottom {
+	display: flex;
+
+	justify-content: space-between;
+	align-items: center;
+
+	margin-top: 120px;
+	margin-bottom: 50px;
+}
+
+.footer__link-about {
+	height: 18px;
+
+	font-family: "Proxima Nova Regular";
+	font-size: 14px;
+
+	opacity: 0.5;
+	color: #ffffff;
+	border-bottom: 1px solid #ffffff;
+
+	text-decoration: none;
+}
+
+.footer__link-about:hover {
+	opacity: 1;
+}
+
+.footer__container-social {
+	display: flex;
+
+	align-items: center;
+}
+
+.footer__social-label {
+	margin-right: 30px;
+
+	font-family: "Proxima Nova Regular";
+	font-size: 14px;
+
+	color: #ffffff;
+}
+
+.footer__link-social {
+	width: 35px;
+	height: 35px;
+	margin-right: 10px;
+
+	font-size: 0px;
+} 
+
+.link-social--vk {
+	background-image: url(/img/vkIcon.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.link-social--twitter {
+	background-image: url(/img/twitterIcon.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.link-social--facebook {
+	background-image: url(/img/facebookIcon.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.link-social--youtube {
+	background-image: url(/img/youtubeIcon.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+/* Стили модального окна */
+.modal-menu {
+	display: block;
+
+	width: 100%;
+	height: 100vh;
+
+	position: fixed;
+	z-index: 99;
+
+	background-color: #ffffff;
+
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.5s;
+	transition-property: transform;
+	transform: translateY(100vh);
+}
+
+.modal-menu--active {
+	transform: translateY(0);
+}
+
+.modalMenu__button-close {
+	width: 45px;
+	height: 45px;
+
+	position: absolute;
+	top: 30px;
+	right: 30px;
+
+	border: none;
+	background-color: rgba(255, 255, 255, 0);
+	background-image: url(/img/closeButton.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+
+	cursor: pointer;
+}
+
+.modal-menu__title {
+	margin-bottom: 30px;
+	padding: 30px;
+
+	font-family: "Proxima Nova Bold";
+	font-size: 120px;
+
+	color: #e12457;
+
+	text-align: center;
+}
+
+.modal-menu__link {
+	display: block;
+
+	width: 100%;
+	height: 40px;
+	margin-bottom: 40px;
+	padding-right: 30px;
+	padding-left: 30px;
+
+	font-family: "Proxima Nova Regular";
+	font-size: 38px;
+
+	color: #000000;
+
+	text-align: center;
+	text-decoration: none;
+}
 
 /* Медиа стили */
 @media screen and (max-width: 1024px) {
 	/* Стили для шапки */
-	.heder__video-text-line {
+	.heder__text-line-video {
 		display: none;
 	}
 
 	/* Стили для блока со статистикой */
-	.statistics-section__statistics-card {
+	.statistics-section__card-statistics {
 		justify-content: center;
 		align-items: center;
 		flex: 1;
 	}
 
-	.statistics-card--line::before {
+	.statistics-section__text-card-statistics {
+		text-align: center;
+	}
+
+	.card-statistics--line::before {
 		display: none;
 	}
 
@@ -656,7 +1109,7 @@
 	}
 
 	/* Стили для блока с информацией о стоимости полёта */
-	.flight-cost-section__content-container {
+	.flight-cost-section__container-content {
 		width: 100%;
 		height: 380px;
 		margin-top: 110px;
@@ -670,7 +1123,7 @@
 		background-size: cover;
 	}
 
-	.flight-cost-section__image-container {
+	.flight-cost-section__container-image {
 		position: absolute;
 		top: -45px;
 		left: 50px;
@@ -681,12 +1134,12 @@
 		height: 255px;
 	}
 
-	.flight-cost-section__top-panel {
+	.flight-cost-section__panel-top {
 		padding-right: 30px;
 		padding-left: 350px;
 	}
 
-	.flight-cost-section__bottom-panel {
+	.flight-cost-section__panel-bottom {
 		display: flex;
 
 		justify-content: space-between;
@@ -697,7 +1150,99 @@
 		padding-right: 30px;
 		padding-left: 30px;
 	}
+
+	/* Стили для блока с информацией об организации жизни в космосе */
+	.organization-life-space-section__content-organization-spoiler {
+		width: 900px;
+	}
+
+	.organization-life-space-section__container-content {
+		justify-content: space-between;
+	}
 }
+
+@media screen and (max-width: 1000px) {
+	/* Стили для блока с информацией об организации жизни в космосе */
+	.organization-life-space-section__container-content {
+		display: flex;
+
+		flex-direction: row;
+
+		height: 790px;
+		padding-left: 0;
+	}
+
+	.button-organization-spoiler {
+		flex-direction: row;
+
+		min-width: 30px;
+		height: 30px;
+		margin-top: 20px;
+		margin-right: 0px;
+		margin-bottom: 0;
+	}
+
+	.button-organization-spoiler--active {
+		margin-right: 0px;
+	}
+
+	.button-organization-spoiler::before {
+		top: -28px;
+		left: 0px;
+	}
+	.button-organization-spoiler--end::before {
+		left: auto;
+	}
+
+	.button-organization-spoiler > .button-organization-spoiler__label {
+		display: block;
+		overflow: hidden;
+
+		max-width: 0px;
+		max-height: 30px;
+		margin-top: 0px;
+
+		transition-timing-function: ease-in-out;
+		transition-duration: 0.7s;
+		transition-property: max-width;
+
+		writing-mode: horizontal-tb !important;
+		text-orientation: unset;
+	}
+
+	.button-organization-spoiler--active > .button-organization-spoiler__label {
+		max-width: 200px;
+		margin-left: 20px;
+	}
+
+	.organization-life-space-section__content-organization-spoiler {
+		width: 100%;
+
+		top: 90px;
+		left: 0;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	/* Стили для блока с информацией о жизни в космосе */
+	.about-life-space-section__plug-video {
+		display: flex;
+
+		justify-content: center;
+		align-items: center;
+
+		width: 95%;
+		height: 360px;
+		margin: 0 auto;
+		margin-top: 60px;
+
+		background-image: url(/img/videoPlugTwo.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+}
+
 @media screen and (max-width: 800px) {
 	/* Стили для шапки */
 	.header {
@@ -717,7 +1262,7 @@
 		font-size: 157px;
 	}
 
-	.heder__video-text-container {
+	.heder__container-text-video {
 		display: flex;
 
 		align-items: center;
@@ -732,18 +1277,18 @@
 		height: 260px;
 	}
 
-	.heder__video-text-line {
+	.heder__text-line-video {
 		display: none;
 	}
 
-	.header_scroll-button-container {
+	.header__container-button-scroll {
 		display: flex;
 
 		justify-content: center;
 	}
 
 	/* Общие стили */
-	.section-title {
+	.title-section {
 		margin-top: 75px;
 
 		font-size: 48px;
@@ -756,7 +1301,7 @@
 	}
 
 	/* Стили для блока с информацией об Илоне Маске */
-	.about-ilon-section__image-container {
+	.about-ilon-section__container-image {
 		top: 53px;
 	}
 
@@ -773,22 +1318,25 @@
 		max-width: 100%;
 	}
 
-	/* Стили для блока с информацией о жизни в космосе */
-	.about-life-space-section__video {
-		display: flex;
+	/* Футер */
+	.footer__description {
+		margin-left: 30px;
+	}
+}
 
-		justify-content: center;
-		align-items: center;
+@media (max-width: 1000px) and (min-width: 601px) {
+	.organization-life-space-section__container-content::before {
+		width: 98%;
+		height: 4px;
+	}
 
-		width: 95%;
-		height: 360px;
-		margin: 0 auto;
-		margin-top: 60px;
+	.button-organization-spoiler--end {
+		flex-direction: row-reverse;
+	}
 
-		background-image: url(/img/videoPlugTwo.png);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
+	.button-organization-spoiler--active.button-organization-spoiler--end > .button-organization-spoiler__label {
+		margin-right: 20px;
+		margin-left: 0px;
 	}
 }
 
@@ -803,11 +1351,11 @@
 		background-size: cover;
 	}
 
-	.header__menu-button {
+	.header__button-menu {
 		font-size: 0;
 	}
 
-	.header__bottom-panel {
+	.header__panel-bottom {
 		margin-top: 80px;
 	}
 
@@ -825,13 +1373,13 @@
 		height: 140px;
 	}
 
-	.play-button {
+	.button-play {
 		width: 55px;
 
 		font-size: 0;
 	}
 
-	.heder__video-text-container {
+	.heder__container-text-video {
 		display: flex;
 
 		align-items: center;
@@ -841,16 +1389,16 @@
 		right: 15%;
 	}
 
-	.heder__video-text {
+	.heder__text-video {
 		font-size: 14px;
 	}
 
-	.header_scroll-button-container {
+	.header__container-button-scroll {
 		margin-top: 100px;
 		margin-bottom: 20px;
 	}
 
-	.header-scroll-button {
+	.button-scroll {
 		width: 60px;
 		height: 60px;
 	}
@@ -866,7 +1414,7 @@
 	}
 
 	/* Стили для блока с информацией об Илоне Маске */
-	.about-ilon-section__image-container {
+	.about-ilon-section__container-image {
 		display: flex;
 
 		justify-content: center;
@@ -893,7 +1441,7 @@
 	}
 
 	/* Стили для блока с информацией о стоимости полёта */
-	.flight-cost-section__content-container {
+	.flight-cost-section__container-content {
 		width: 100%;
 		height: 650px;
 		margin-top: 190px;
@@ -907,7 +1455,7 @@
 		background-size: cover;
 	}
 
-	.flight-cost-section__image-container {
+	.flight-cost-section__container-image {
 		margin-left: -145px;
 
 		top: -145px;
@@ -919,12 +1467,12 @@
 		height: 290px;
 	}
 
-	.flight-cost-section__top-panel {
+	.flight-cost-section__panel-top {
 		padding-top: 190px;
 		padding-left: 15px;
 	}
 
-	.flight-cost-section__bottom-panel {
+	.flight-cost-section__panel-bottom {
 		flex-direction: column;
 		align-items: flex-start;
 
@@ -949,7 +1497,7 @@
 		height: auto;
 	}
 
-	.about-life-space-section__video {
+	.about-life-space-section__plug-video {
 		display: flex;
 
 		justify-content: center;
@@ -972,7 +1520,7 @@
 		margin-bottom: 10px;
 	}
 
-	.about-life-space-section__spoiler-button {
+	.about-life-space-section__button-spoiler {
 		width: 100%;
 		margin-bottom: 40px;
 
@@ -981,18 +1529,172 @@
 		background-position-x: right;
 	}
 
-	.spoiler-button--active {
+	.button-spoiler--active {
 		background-image: url(/img/arrowIconTop.png);
 		background-repeat: no-repeat;
 		background-position-y: 50%;
 	}
 
-	.about-life-space-section__spoiler-content {
+	.about-life-space-section__content-spoiler {
 		position: unset;
+	}
+	.content-spoiler--active {
+		min-height: 340px;
 	}
 
 	.about-life-space-section__title-spoiler {
 		display: none;
+	}
+
+	/* Стили для блока с информацией об организации жизни в космосе */
+	.organization-life-space-section__container-content {
+		flex-direction: column;
+
+		height: auto;
+	}
+
+	.organization-life-space-section__container-content::before {
+		height: 98%;
+	}
+
+	.button-organization-spoiler {
+		min-width: 90%;
+		margin-top: 0;
+		margin-bottom: 30px;
+		margin-left: 20px;
+	}
+
+	.button-organization-spoiler--active {
+		margin-bottom: 0;
+	}
+
+	.button-organization-spoiler--end {
+		margin-bottom: 0;
+	}
+
+	.button-organization-spoiler--end::before {
+		top: unset;
+		bottom: 0px;
+	}
+
+	.button-organization-spoiler--teacup::before {
+		top: 0;
+	}
+
+	.button-organization-spoiler > .button-organization-spoiler__label {
+		max-height: 30px;
+	}
+
+	.button-organization-spoiler::before {
+		top: 0px;
+		left: -29px;
+	}
+
+	.organization-life-space-section__content-organization-spoiler {
+		margin-top: 5px;
+		padding-right: 0px;
+		padding-left: 20px;
+
+		position: unset;
+	}
+
+	.content-organization-spoiler--active {
+		margin-bottom: 25px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.organization-life-space-section__image-organization-spoiler {
+		height: 100%;
+	}
+
+	/* Футер */
+	.title-section--footer {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+
+	.footer__panel-top {
+		flex-direction: column-reverse;
+	}
+
+	.form-subscribe {
+		width: 100%;
+		padding-right: 9.38%;
+		padding-left: 9.38%;
+	}
+
+	.form-subscribe__input {
+		min-width: 200px;
+	}
+
+	.form-subscribe__button {
+		min-width: 200px;
+	}
+
+	.footer__description {
+		margin-bottom: 45px;
+		margin-left: 0px;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+
+	.footer__panel-bottom {
+		flex-direction: column-reverse;
+
+		margin-top: 55px;
+		margin-bottom: 35px;
+	}
+
+	.footer__logo {
+		margin-top: 40px;
+	}
+
+	.footer__link-about {
+		margin-top: 35px;
+	}
+
+	.footer__social-label {
+		display: none;
+	}
+
+	/* Стили для модального окна */
+	.modal-menu__title {
+		margin-bottom: 15px;
+		padding: 15px;
+
+		font-family: "Proxima Nova Bold";
+		font-size: 50px;
+
+		color: #e12457;
+
+		text-align: left;
+	}
+
+	.modal-menu__link {
+		display: block;
+
+		width: 100%;
+		height: 40px;
+		margin-bottom: 10px;
+		padding-right: 15px;
+		padding-left: 15px;
+
+		font-family: "Proxima Nova Regular";
+		font-size: 16px;
+
+		color: #000000;
+
+		text-align: left;
+		text-decoration: none;
+	}
+
+	.modalMenu__button-close {
+		width: 25px;
+		height: 25px;
+
+		top: 35px;
+		right: 15px;
 	}
 }
 

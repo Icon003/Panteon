@@ -15,7 +15,7 @@ var path = {
 	src: {
 		html: 'app/*.html',
 		css: 'app/css/style.css',
-		js: 'app/js/main.js',
+		js: 'app/js/script.js',
 		img: 'app/img/*.*',
 		fonts: 'app/fonts/*.*'
 	},
@@ -83,9 +83,9 @@ gulp.task('js:build', function () {
 			presets: ['@babel/env']
 		}))
 		.pipe(uglify())
-		.pipe(rename({
-			suffix: '.min'
-		}))
+		// .pipe(rename({
+		// 	suffix: '.min'
+		// }))
 		.pipe(gulp.dest(path.build.js))
 		.pipe(browserSync.reload({stream: true}));
 });
