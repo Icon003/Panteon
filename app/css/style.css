@@ -1053,6 +1053,10 @@ body {
 	text-align: center;
 }
 
+.modal-menu__container-link {
+	list-style-type: none;
+}
+
 .modal-menu__link {
 	display: block;
 

@@ -10,15 +10,19 @@
 </head>
 <body>
     <div id="modalMenu" class="modal-menu">
-        <button id="buttonModalClose" class="modalMenu__button-close"></button>
+        <button id="buttonModalClose" class="modalMenu__button-close" aria-label="Закрыть модальное меню"></button>
         <h2 class="modal-menu__title">Меню</h2>
-        <a href="#statistics" class="modal-menu__link">Статистика</a>
-        <a href="#aboutMars" class="modal-menu__link">Что такое Марс?</a>
-        <a href="#ilonMask" class="modal-menu__link">Илон Маск</a>
-        <a href="#costFlight" class="modal-menu__link">Стоимость</a>
-        <a href="#pitfalls" class="modal-menu__link">Подводные камни</a>
-        <a href="#organizationLife" class="modal-menu__link">Организация жизни</a>
-        <a href="#whenStart" class="modal-menu__link">Когда вылетаем?</a>
+        <nav class="modal-menu__navigation">
+            <ul class="modal-menu__navigation-list">
+                <li class="modal-menu__container-link"><a href="#statistics" class="modal-menu__link">Статистика</a></li>
+                <li class="modal-menu__container-link"><a href="#aboutMars" class="modal-menu__link">Что такое Марс?</a></li>
+                <li class="modal-menu__container-link"><a href="#ilonMask" class="modal-menu__link">Илон Маск</a></li>
+                <li class="modal-menu__container-link"><a href="#costFlight" class="modal-menu__link">Стоимость</a></li>
+                <li class="modal-menu__container-link"><a href="#pitfalls" class="modal-menu__link">Подводные камни</a></li>
+                <li class="modal-menu__container-link"><a href="#organizationLife" class="modal-menu__link">Организация жизни</a></li>
+                <li class="modal-menu__container-link"><a href="#whenStart" class="modal-menu__link">Когда вылетаем?</a></li>
+            </ul>
+        </nav>
     </div>
     <header class="header">
         <div class="wrapper">
@@ -39,7 +43,7 @@
                     </div>
                 </div>
                 <div class="header__container-button-scroll">
-                    <a href="#statistics" class="button-scroll"></a>  
+                    <a href="#statistics" class="button-scroll" aria-label="Вниз"></a>  
                 </div>
             </div>
         </div>
@@ -264,8 +268,8 @@
             <div class="footer__panel-top">
                 <form class="form-subscribe" action="" method="post">
                     <h3 class="form-subscribe__title">Будь в курсе новостей</h3>
-                    <input class="form-subscribe__input" id="name" name="name" type="text" autocorrect="off" autocomplete="name" placeholder="Имя">
-                    <input class="form-subscribe__input" id="email" name="email" type="text" autocorrect="off" autocomplete="name" placeholder="Email">
+                    <input class="form-subscribe__input" id="name" name="name" type="text" autocorrect="off" autocomplete="name" placeholder="Имя" aria-label="Имя">
+                    <input class="form-subscribe__input" id="email" name="email" type="text" autocorrect="off" autocomplete="name" placeholder="Email" aria-label="Email">
                     <button class="form-subscribe__button">Подписаться</button>
                 </form>
                 <div class="footer__description">
