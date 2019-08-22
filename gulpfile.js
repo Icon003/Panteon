@@ -4,7 +4,6 @@ let gulp = require('gulp'),
 	concat = require('gulp-concat'),
 	uglify = require('gulp-uglifyjs'),
 	cssnano = require('gulp-cssnano'),
-	rename = require('gulp-rename'),
 	imagemin = require('gulp-imagemin'),
 	pngquant = require('imagemin-pngquant'),
 	cache = require('gulp-cache'),
@@ -83,9 +82,6 @@ gulp.task('js:build', function () {
 			presets: ['@babel/env']
 		}))
 		.pipe(uglify())
-		// .pipe(rename({
-		// 	suffix: '.min'
-		// }))
 		.pipe(gulp.dest(path.build.js))
 		.pipe(browserSync.reload({stream: true}));
 });
