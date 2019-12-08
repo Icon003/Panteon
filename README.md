@@ -2,4 +2,4 @@
  
 Посмотреть можно тут: https://icon003.github.io/Panteon/
 
-![alt text](https://www.dropbox.com/s/dkuzreinl6psnhr/panteonDesctop.png?dl=0)
+![alt text](https://previews.dropbox.com/p/thumb/AApDzpUZoN4hiTEv2vLq8S8KeYpBv4PTT7KUJ-OHvtkQzyJtBZU7JpDiYTsaq421HV_Qr2t7AVrOYiSPdc8XREfXMuUNQBVdpjKnPDV-v7SwszQdPCz_Xf3NW-fOBRui4xS-JcgzwC2kmLiRqzCI2LDlBCHj4v-GExSFU9u2naQ3nDDGaUa0Ic1nIhNWTQDB_18_GdivhIo_h6PGFw1kiT5VBms9Xu37aJnDdc5xBD8INw5xmHWnVOBaHS_GFjk1mfYrc0OZCNGTFh5JxGMyU1lHRuJfJodoQXelyQ4y8r3i2x_Ja2K8NY4HA9QFrGyul2b74Dz3KHG4d-FSJ8EISM5r/p.png?fv_content=true&size_mode=5)
